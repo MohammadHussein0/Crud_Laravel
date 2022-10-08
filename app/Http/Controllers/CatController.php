@@ -9,6 +9,12 @@ class CatController extends Controller
 {
     public function all(){
         $cats = Cat::all();
-        return $cats ;
+        return view('cats.all' ,compact('cats')) ;
     }
+
+    public function show($id){
+        $cat =Cat::findOrFail($id) ;
+        return view('cats.show', compact('cat')) ;
+    }
+
 }

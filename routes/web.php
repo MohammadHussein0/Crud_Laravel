@@ -12,3 +12,4 @@ Route::get('/', function () {
 
 
 Route::get('/cats',[CatController::class, 'all']) ;
+Route::get('/cats/show/{id}',[CatController::class, 'show']) ;
