@@ -17,4 +17,14 @@ class CatController extends Controller
         return view('cats.show', compact('cat')) ;
     }
 
+
+    public function create(){
+        return view('cats.create') ;
+    }
+
+
+    public function store(){
+        // write code here
+    }
+
 }

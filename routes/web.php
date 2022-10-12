@@ -10,6 +10,7 @@ Route::get('/', function () {
 });
 
 
-
 Route::get('/cats',[CatController::class, 'all']) ;
-Route::get('/cats/show/{id}',[CatController::class, 'show']) ;
+Route::get('/cats/show/{id}', [CatController::class, 'show']) ;
+Route::get('/cats/create', [CatController::class, 'create']) ;
+Route::get('/cats/store/{id}' ,[CatController::class , 'store']) ;
